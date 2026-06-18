@@ -1,8 +1,11 @@
 from sarvamai import SarvamAI
 import base64
 from datetime import datetime
+from dotenv import load_dotenv
 
-client = SarvamAI(api_subscription_key="sk_d3d7axny_rA4cHrpOiuT3gfyYwAPXHQeM")
+load_dotenv(dotenv_path=".env.local")
+api_key = os.getenv("SARVAM_API_KEY")
+client = SarvamAI(api_subscription_key=api_key)
 
 LANGUAGE_MAP = {
     "Hindi": "hi-IN",
