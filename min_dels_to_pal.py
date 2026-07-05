@@ -1,5 +1,5 @@
 class Solution:
-    def minDeletionstoPalindrome(self,pal: str) -> int:
+    def minDeletionstoPalindrome(self,s: str) -> int:
         n= len(s)
         # making an n*n 2D dp table
         dp = [[0]*n for i in range(n)]
