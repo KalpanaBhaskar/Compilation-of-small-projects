@@ -15,7 +15,7 @@ class Trie:
                 current_node.children[c] = Node()
             current_node = current_node.children[c]   
         current_node.is_end_of_word = True
-
+ 
     # O(n) - n is length of word
     def search(self,word):
         current_node = self.root
